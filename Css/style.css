@@ -1,165 +1,96 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --bg-cream: #FAF6F0;
-    --bg-beige: #F5ECD7;
-    --accent-gold: #C59330;
-    --accent-light: #E5BA73;
-    --text-dark: #2C2519;
-    --text-muted: #655947;
-    --font-serif: 'Playfair Display', serif;
-    --font-sans: 'Poppins', sans-serif;
-}
-
 body {
-    font-family: var(--font-sans);
-    background-color: var(--bg-cream);
-    color: var(--text-dark);
-    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF6F0; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* الحاوية الرئيسية مقسمة نصفين بالـ Flexbox */
-.login-container {
-    display: flex;
-    width: 90%;
-    max-width: 1000px;
-    height: 600px;
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(44, 37, 25, 0.08);
-}
-
-/* الجزء الأيسر (الصورة) */
-.login-image-side {
-    flex: 1;
-    background-color: var(--bg-beige); /* تقدري تبدلي الخلفية بصورة مجوهرات قريبة */
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    padding: 40px;
-}
-
-.brand-overlay h2 {
-    font-family: var(--font-serif);
-    font-size: 32px;
-    color: var(--text-dark);
-    margin-bottom: 10px;
-}
-
-.brand-overlay p {
-    color: var(--text-muted);
-    font-size: 14px;
-}
-
-/* الجزء الأيمن (الفورم) */
-.login-form-side {
-    flex: 1;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-.form-wrapper {
+section {
+    background-color: #FFFFFF; 
     width: 100%;
-    max-width: 360px;
+    max-width: 450px;          
+    padding: 40px 30px;
+    border-radius: 16px; 
+    border: 1px solid #C59330;     
 }
 
-.form-header h2 {
-    font-family: var(--font-serif);
-    font-size: 28px;
-    margin-bottom: 8px;
+header h2 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
 }
 
-.form-header p {
-    color: var(--text-muted);
-    font-size: 14px;
-    margin-bottom: 30px;
+.data {
+    margin-bottom: 15px;    
 }
 
-/* تنسيق الخانات (Inputs) */
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group label {
+.data label {
     display: block;
     font-size: 13px;
+    font-weight: 500;
     margin-bottom: 6px;
-    color: var(--text-dark);
-    font-weight: 500;
+    color: #2C2519;
 }
 
-.input-group input {
+.data input {
     width: 100%;
-    padding: 12px;
-    border: 1px solid rgba(101, 89, 71, 0.2);
+    padding: 12px 14px;
     border-radius: 8px;
-    background-color: var(--bg-cream);
-    font-family: var(--font-sans);
-    color: var(--text-dark);
-    outline: none;
-    transition: border-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #FAF6F0; 
+    border: 1px solid #C59330;
 }
 
-.input-group input:focus {
-    border-color: var(--accent-gold);
-}
-
-/* تظبيط الأزرار والروابط */
-.form-actions {
+.checkbox {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 8px;                  
+    margin-bottom: 25px;
     font-size: 13px;
-    margin-bottom: 24px;
 }
 
-.forgot-pass, .form-footer a {
-    color: var(--accent-gold);
-    text-decoration: none;
-    font-weight: 500;
+.checkbox input[type="checkbox"] {
+    accent-color: #C59330;     
 }
 
-.forgot-pass:hover, .form-footer a:hover {
-    text-decoration: underline;
-}
-
-.btn-login {
+.login {
+    display: block;
     width: 100%;
     padding: 14px;
-    background-color: var(--accent-gold);
-    color: #FFFFFF;
-    border: none;
+    background-color: #C59330; 
+    color: #FFFFFF;            
+    text-decoration: none;     
+    text-align: center;       
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s ;
 }
 
-.btn-login:hover {
-    background-color: var(--accent-light);
+.login:hover {
+    background-color: #e9b96c; 
 }
 
-.form-footer {
-    text-align: center;
-    margin-top: 24px;
-    font-size: 14px;
-    color: var(--text-muted);
-}
+
+
+
+

@@ -3,56 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everyday Jewels | Login or Register</title>
-    <link rel="stylesheet" href="login-style.css">
+    <title>Everyday Jewels | Create New Account</title>
+    <link rel="stylesheet" href="Css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="login-container">
-        <!-- النصف الأيسر: صورة أو خلفية جمالية مريحة للعين -->
-        <div class="login-image-side">
-            <div class="brand-overlay">
-                <h2>Everyday Jewels</h2>
-                <p>Elevate Your Look, Every Single Day.</p>
+    <main>
+        <section>
+            <div>
+                <header>
+                    <h2>Create Account</h2>
+                </header>
             </div>
-        </div>
 
-        <!-- النصف الأيمن: الفورم (اللوج إن) -->
-        <div class="login-form-side">
-            <div class="form-wrapper">
-                <div class="form-header">
-                    <h2>Welcome Back</h2>
-                    <p>Please enter your details to sign in.</p>
-                </div>
-
+            <div class="create-account">
                 <form>
-                    <div class="input-group">
+                    <div class="data">
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name" name="Name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="data">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
                     </div>
 
-                    <div class="input-group">
+                    <div class="data">
                         <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="••••••••" required>
+                        <input type="password" id="password" name="password" placeholder="Minimum 6 characters" min-length="6" required>
                     </div>
 
-                    <div class="form-actions">
-                        <label class="remember-me">
-                            <input type="checkbox"> Remember me
-                        </label>
-                        <a href="#" class="forgot-pass">Forgot Password?</a>
+                    <div class="data">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
                     </div>
 
-                    <button type="submit" class="btn-login">Sign In</button>
+                    <div class="checkbox">
+                        <input type="checkbox" name="terms" required> 
+                        <label>I agree to the Terms & Conditions</label>
+                    </div>
+
+                        <a href="index.html" class="login">Create Account</a>
                 </form>
 
-                <div class="form-footer">
-                    <p>Don't have an account? <a href="#">Create new account</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
 </body>
 </html>
