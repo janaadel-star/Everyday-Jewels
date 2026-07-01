@@ -92,5 +92,142 @@ header h2 {
 
 
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #FFFFFF;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.75;
+  font-style: italic;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color:#C8973E;
+  font-style: italic;
+}
+
+.sub {
+  text-align: center;  
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #C8973E;
+  margin-top: 4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #C8973E;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color:#1a1a1a;
+}
+
+.photo {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  height: 450px;
+  background: #FAF6F0;
+  overflow: hidden;
+}
+
+.photo-text {
+  padding: 20px 40px;
+  margin-bottom: 50px;
+}
+
+.eyebrow {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 40px;
+  color: #C8973E;
+  margin-bottom:5px;
+}
+
+.headline {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  max-width: 420px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+
+.cta-btn {
+  background: #C8973E;
+  color: #fff;
+  padding: 16px 34px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  box-shadow: 0 6px 14px rgba(220, 170, 76, 0.25);
+}
+
+.cta-btn:hover {
+  background: #b5832c;
+  box-shadow: 0 10px 20px rgba(200, 151, 62, 0.4);
+}
+
+
+.image-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 45%;      
+  overflow: hidden;
+}
+
+.image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.image-wrap:hover img {
+  transform: scale(1.06);
+  filter: brightness(1.05) saturate(1.08);
+}
+
+
+
 
 
