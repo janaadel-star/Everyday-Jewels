@@ -68,12 +68,11 @@ body {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
-  /* transition: 0.3s ; */
 }
 
 .signin:hover {
-  background-color: #d99f41; 
-  transition: 0.3s;
+  background: #b5832c;
+  box-shadow: 0 10px 20px rgba(200, 151, 62, 0.4);
 }
 
 @media (max-width: 1024px) {
@@ -118,31 +117,17 @@ body {
   left: 0;             
   width: 100%;         
   z-index: 1000;
-  height: 70px;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  line-height: 0.75;
-  font-style: italic;
+  height: 65px;
 }
 
 .brand {
+  display: flex;
+  line-height: 0.75;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 3px;
   color:#C8973E;
-  font-style: italic;
-}
-
-.sub {
-  text-align: center;  
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: #C8973E;
-  margin-top: 4px;
+  margin-left: 30px;
 }
 
 .nav-links {
@@ -156,16 +141,14 @@ body {
   color: #C8973E;
   font-size: 15px;
   font-weight: 500;
-  position: relative;
   padding-bottom: 6px;
-  transition: color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .nav-links li a:hover {
   color:#1a1a1a;
 }
 
-/* -- Responsive: Navbar -- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -191,49 +174,40 @@ body {
 }
 
 
-/* ============================================
-   HOME PAGE (HERO / PHOTO SECTION)
-   ============================================ */
+
+
 .photo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
-  padding: 40px 60px;
-  min-height: calc(100vh - 90px);
-  overflow: hidden;
+  gap: 90px;
+  padding: 40px 50px;
 }
 
 .photo-text {
   flex: 1;
-  max-width: 640px;
-  padding-right: 20px;
 }
 
 .eyebrow {
   color: #c9992e;
-  font-style: italic;
   font-size: 32px;
   font-weight: 500;
-  margin-bottom: 14px;
+  margin-bottom: 30px;
 }
 
 .headline {
   font-size: 70px;
   font-weight: 600;
-  font-style: italic;
   color: #3a3a3a;
   line-height: 1.1;
   margin-bottom: 30px;
 }
 
 .description {
-  font-style: italic;
   font-size: 20px;
   color: #555;
   line-height: 1.6;
   margin-bottom: 36px;
-  max-width: 520px;
 }
 
 .cta-btn {
@@ -245,6 +219,7 @@ body {
   padding: 20px 46px;
   border-radius: 40px;
   font-size: 16px;
+  justify-content: center;
 }
 
 .cta-btn:hover {
@@ -253,27 +228,21 @@ body {
 }
 
 .image-wrap {
-  flex: 1.3;
-  height: 82vh;
+  height: 89vh;
   display: flex;
-  justify-content: flex-end;
 }
 
 .image-wrap img {
   width: 100%;
   height: 100%;
-  max-width: none;
   border-radius: 16px;
   object-fit: cover;
-  display: block;
 }
 
-.image-wrap:hover img {
+.image-wrap img:hover{
   transform: scale(1.06);
-  filter: brightness(1.05) saturate(1.08);
 }
 
-/* -- Responsive: Home Page / Hero -- */
 @media (max-width: 1024px) {
   .photo {
     padding: 40px 30px;
@@ -338,6 +307,7 @@ body {
     padding: 16px 20px;
   }
 }
+
 
 
 /* ============================================
