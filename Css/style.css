@@ -11,15 +11,9 @@ body {
 } 
 
 
-/* ============================================
-   CREATE ACCOUNT PAGE
-   ============================================ */
 .create-account-main {
-  width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 100px auto;
 } 
 
 .create-account-section {
@@ -35,7 +29,7 @@ body {
   font-family: 'Playfair Display', serif; 
   font-size: 32px;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   letter-spacing: 0.5px;
 }
 
@@ -44,10 +38,8 @@ body {
 }
 
 .data label {
-  display: block;
   font-size: 13px;
   font-weight: 500;
-  margin-bottom: 6px;
   color: #2C2519;
 }
 
@@ -62,17 +54,13 @@ body {
 }
 
 .checkbox {
-  display: flex;
-  align-items: center;
-  gap: 8px;                  
   margin-bottom: 25px;
   font-size: 13px;
 }
 
-.login {
+.signin {
   display: block;
-  width: 100%;
-  padding: 14px;
+  padding: 15px;
   background-color: #C59330; 
   color: #FFFFFF;            
   text-decoration: none;     
@@ -80,11 +68,12 @@ body {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
-  transition: 0.3s ;
+  /* transition: 0.3s ; */
 }
 
-.login:hover {
-  background-color: #e9b96c; 
+.signin:hover {
+  background-color: #d99f41; 
+  transition: 0.3s;
 }
 
 @media (max-width: 1024px) {
@@ -116,9 +105,8 @@ body {
 }
 
 
-/* ============================================
-   NAVBAR
-   ============================================ */
+
+
 .navbar {
   display: flex;
   align-items: center;
