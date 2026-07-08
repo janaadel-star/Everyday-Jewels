@@ -385,7 +385,6 @@ body {
 .shop-collection {
   padding: 90px 60px 110px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .eyebrow.center {
@@ -394,11 +393,11 @@ body {
 
 .shop-headline {
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
   font-weight: 800;
   font-size: 40px;
   color: #2b2b2b;
   margin: 8px 0 60px;
+  text-align: center;
 }
 
 .shop-grid {
@@ -413,10 +412,8 @@ body {
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
-  text-align: left;
   display: flex;
   flex-direction: column;
-  height: 100%;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -429,7 +426,6 @@ body {
   width: 100%;
   aspect-ratio: 4 / 5;
   background: #f0e9db;
-  overflow: hidden;
 }
 
 .product-image img {
@@ -441,10 +437,7 @@ body {
 
 .product-info {
   padding: 16px 18px 20px;
-  display: flex;
-  flex-direction: column;
   gap: 6px;
-  flex: 1;
 }
 
 .product-info h3 {
@@ -475,7 +468,6 @@ body {
 }
 
 .buy-btn {
-  display: inline-block;
   background-color: #c9992e;
   color: #fff;
   font-weight: 600;
@@ -490,7 +482,6 @@ body {
   background-color: #b3862a;
 }
 
-/* -- Responsive: Shop Collection -- */
 @media (max-width: 1024px) {
   .shop-collection {
     padding: 70px 30px 90px;
@@ -518,9 +509,6 @@ body {
 }
 
 
-/* ============================================
-   TITLE BOX (SECTION HEADER)
-   ============================================ */
 .title-box {
   text-align: center;
   padding: 70px 30px 10px;
