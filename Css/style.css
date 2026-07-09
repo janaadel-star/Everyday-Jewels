@@ -78,6 +78,7 @@ body {
 @media (max-width: 1024px) {
   .create-account-main {
     width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -98,12 +99,14 @@ body {
     margin: 20px auto;
   }
 
+  .create-account-section {
+    padding: 25px 15px;
+  }
+
   .create-account-header h2 {
     font-size: 26px;
   }
 }
-
-
 
 
 .navbar {
@@ -166,10 +169,22 @@ body {
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
   .brand,
   .sub {
     font-size: 16px;
     letter-spacing: 2px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    font-size: 13px;
   }
 }
 
@@ -368,15 +383,55 @@ body {
     gap: 60px;
     padding: 60px 30px;
   }
+
+  .headline2 {
+    font-size: 44px;
+  }
 }
+
 @media (max-width: 768px) {
   .layers-feature {
     flex-direction: column;
     gap: 30px;
     padding: 40px 20px;
+    text-align: center;
   }
+
+  .layers-text {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .layers-image {
+    width: 100%;
+  }
+
   .layers-image img {
     max-width: 280px;
+  }
+
+  .eyebrow2 {
+    font-size: 24px;
+  }
+
+  .headline2 {
+    font-size: 36px;
+  }
+
+  .description2 {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline2 {
+    font-size: 28px;
+  }
+
+  .description2 {
+    font-size: 16px;
   }
 }
 
@@ -489,22 +544,34 @@ body {
 }
 
 @media (max-width: 768px) {
+  .shop-collection {
+    padding: 60px 20px 70px;
+  }
+
   .shop-headline {
     font-size: 30px;
+    margin: 8px 0 40px;
   }
 
   .shop-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
 
 @media (max-width: 480px) {
+  .shop-collection {
+    padding: 40px 15px 50px;
+  }
+
   .shop-headline {
     font-size: 24px;
+    margin: 8px 0 30px;
   }
 
   .shop-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
@@ -526,12 +593,20 @@ body {
 }
 
 @media (max-width: 768px) {
+  .title-box {
+    padding: 50px 15px 10px;
+  }
+
   .title {
     font-size: 30px;
   }
 }
 
 @media (max-width: 480px) {
+  .title-box {
+    padding: 30px 15px 10px;
+  }
+
   .title {
     font-size: 24px;
   }
@@ -615,7 +690,6 @@ body {
   font-size: 15px;
 }
 
-/* -- Responsive: Contact / Reach Section -- */
 @media (max-width: 1024px) {
   .reach-wrap {
     gap: 30px;
@@ -639,10 +713,24 @@ body {
     width: 100%;
     aspect-ratio: 4 / 5;
   }
+
+  .reach-form {
+    padding: 25px;
+  }
 }
 
 @media (max-width: 480px) {
+  .reach-wrap {
+    margin: 30px auto;
+    padding: 0 15px;
+    gap: 20px;
+  }
+
   .reach-form {
     padding: 20px;
+  }
+
+  .reach-form .field {
+    margin-bottom: 16px;
   }
 }
