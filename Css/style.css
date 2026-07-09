@@ -24,7 +24,7 @@ body {
   border-radius: 16px; 
   border: 1px solid #C59330;     
 }
-
+  
 .create-account-header h2 {
   font-family: 'Playfair Display', serif; 
   font-size: 32px;
@@ -51,6 +51,7 @@ body {
   font-size: 14px;
   background-color: #FAF6F0; 
   border: 1px solid #C59330;
+  outline: none;
 }
 
 .checkbox {
