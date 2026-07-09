@@ -260,14 +260,15 @@ body {
 
 @media (max-width: 1024px) {
   .photo {
-    padding: 40px 30px;
-    gap: 30px;
+    gap: 40px;
+    padding: 30px 30px;
   }
-
   .headline {
-    font-size: 52px;
+    font-size: 50px;
   }
-
+  .description {
+    font-size: 18px;
+  }
   .image-wrap {
     height: 60vh;
   }
@@ -276,50 +277,53 @@ body {
 @media (max-width: 768px) {
   .photo {
     flex-direction: column;
-    text-align: center;
+    gap: 30px;
     padding: 30px 20px;
-    min-height: auto;
+    text-align: center;
   }
-
-  .photo-text {
-    max-width: 100%;
-    padding-right: 0;
-  }
-
   .eyebrow {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 16px;
   }
-
   .headline {
-    font-size: 40px;
+    font-size: 38px;
+    margin-bottom: 20px;
   }
-
   .description {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 16px;
+    margin-bottom: 24px;
   }
-
+  .cta-btn {
+    padding: 16px 36px;
+    font-size: 15px;
+  }
   .image-wrap {
-    width: 100%;
     height: 40vh;
-    justify-content: center;
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
+  .photo {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  .eyebrow {
+    font-size: 18px;
+  }
   .headline {
-    font-size: 30px;
+    font-size: 28px;
   }
-
   .description {
-    font-size: 16px;
+    font-size: 14px;
   }
-
   .cta-btn {
     width: 100%;
-    text-align: center;
-    padding: 16px 20px;
+    padding: 14px 0;
+    font-size: 14px;
+  }
+  .image-wrap {
+    height: 30vh;
   }
 }
 
