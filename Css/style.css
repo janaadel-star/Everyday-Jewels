@@ -511,14 +511,13 @@ body {
 
 .title-box {
   text-align: center;
-  padding: 70px 30px 10px;
+  padding: 70px 20px 10px;
   max-width: 780px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .title {
   font-family: 'Poppins', sans-serif;
-  font-style: italic;
   font-weight: 800;
   font-size: 48px;
   line-height: 1.15;
@@ -540,10 +539,9 @@ body {
 
 .reach-wrap {
   display: flex;
-  align-items: stretch;
   gap: 60px;
   max-width: 1200px;
-  margin: 70px auto;
+  margin: 50px auto;
   padding: 0 60px;
 }
 
@@ -556,17 +554,14 @@ body {
 
 .reach-image img {
   position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  transition: 0.3s ease;
+  transition: 0.6s ease;
 }
 
-.reach-image:hover img {
+.reach-image img:hover{
   transform: scale(1.06);
-  filter: brightness(1.05) saturate(1.08);
 }
 
 .reach-form {
@@ -574,7 +569,6 @@ body {
   background: #ffffff;
   border-radius: 16px;
   padding: 44px;
-  box-shadow: 0 10px 30px rgba(43, 43, 43, 0.05);
 }
 
 .reach-form .field {
@@ -590,8 +584,7 @@ body {
   margin-bottom: 8px;
 }
 
-.reach-form input,
-.reach-form textarea {
+.reach-form input {
   border: 1px solid #ece4d3;
   background: #faf7f0;
   border-radius: 8px;
@@ -600,26 +593,24 @@ body {
   font-size: 14px;
   color: #2b2b2b;
   outline: none;
+}
+
+.reach-form textarea{
+  border: 1px solid #ece4d3;
+  background: #faf7f0;
+  border-radius: 8px;
+  padding: 13px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #2b2b2b;
   resize: none;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.reach-form input::placeholder,
-.reach-form textarea::placeholder {
-  color: #b7ac97;
-}
-
-.reach-form input:focus,
-.reach-form textarea:focus {
-  border-color: #c9992e;
-  background: #fff;
+  outline: none;
 }
 
 .btn-full {
   width: 100%;
   text-align: center;
   border: none;
-  cursor: pointer;
   margin-top: 4px;
   font-size: 15px;
 }
