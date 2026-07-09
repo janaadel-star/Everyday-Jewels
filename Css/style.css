@@ -109,6 +109,7 @@ body {
 }
 
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -187,7 +188,6 @@ body {
     font-size: 13px;
   }
 }
-
 
 
 
@@ -323,7 +323,6 @@ body {
     padding: 16px 20px;
   }
 }
-
 
 
 
@@ -574,6 +573,7 @@ body {
     gap: 20px;
   }
 }
+
 
 
 .title-box {
