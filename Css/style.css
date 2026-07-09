@@ -526,7 +526,6 @@ body {
   margin: 8px 0 20px;
 }
 
-/* -- Responsive: Title Box -- */
 @media (max-width: 768px) {
   .title {
     font-size: 30px;
@@ -539,10 +538,6 @@ body {
   }
 }
 
-
-/* ============================================
-   CONTACT / REACH SECTION
-   ============================================ */
 .reach-wrap {
   display: flex;
   align-items: stretch;
